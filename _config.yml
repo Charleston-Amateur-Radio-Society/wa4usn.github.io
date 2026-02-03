@@ -38,6 +38,11 @@ plugins:
 plugins:
   - jekyll-feed
 
+# Menu items
+header_pages:
+  - about.md
+  - repeaters.md
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
