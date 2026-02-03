@@ -1,7 +1,8 @@
-# Charleston Amateur Radio Society
+---
+layout: home
+title: Recent Posts
+---
 
 
 
 
-
-## Items to complete 
