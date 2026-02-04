@@ -513,7 +513,8 @@ The South Carolina Lowcountry has a large number of repeaters, many of which are
  </tr>
 </tbody></table>
 <table align="center" cellspacing="0" cellpadding="0" background="#000000" border="0" width="98%">
- <tbody><tr><td colspan="2"><img src="./images/1x1clear.gif" width="1" height="3" border="0" align="left" /></td></tr> <!-- Spacer -->
+ <tbody><tr><td colspan="2">
+<img src="{{ "/assets/images/1x1clear.gif" | relative_url }}" alt="Description" width="1" height="3" border="0" align="left" /></td></tr> <!-- Spacer -->
        <tr align="center">
         <td class="text12rd" align="left">&nbsp;RED text = repeater part of HEART system</td>
         <td class="text12gr" align="right">GREEN text = repeater part of SCHEART system, to link to another SCHEART&nbsp;</td>
@@ -534,7 +535,10 @@ The South Carolina Lowcountry has a large number of repeaters, many of which are
         <td class="text12vi" align="center">T = link via Trident Hub</td>
         <td class="text12vi" align="right">W = link via Wallace Hub&nbsp;</td>
        </tr>
- <tr><td colspan="3"><img src="./images/1x1clear.gif" width="1" height="5" border="0" align="left" /></td></tr> <!-- Spacer -->
+ <tr><td colspan="3">
+<img src="{{ "/assets/images/1x1clear.gif" | relative_url }}" alt="Description" width="1" height="3" border="0" align="left" /></td></tr> <!-- Spacer -->
+
+
 </tbody></table>
 </figure>
 

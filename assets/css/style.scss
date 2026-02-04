@@ -1,7 +1,11 @@
 ---
 ---
-@import "{{ site.theme }}";
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}", "minima/initialize";
 
+body {
+  background-color: #FFFAF0; // Your custom background color
+  /* Use 'background' instead of 'background-color' if the theme uses gradients or background images */
+}
 .header-image {
   width: 100%; /* Make image span the full width of the header */
   height: auto; /* Maintain aspect ratio */
@@ -16,5 +20,5 @@
     max-width: 1200px; /* Adjust this value as needed */
 }
 .site-title {
-    color: #F54927; // Replace #yourcolor with your desired color code 
+    color: #F54927; // Replace #yourcolor with your desired color code
 }
