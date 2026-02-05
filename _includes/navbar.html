@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="container navbar-container">
+    <a href="{{ '/' | relative_url }}" class="navbar-brand">
+      Charleston Amateur Radio Society
+    </a>
+
+    <button class="navbar-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+      <span class="hamburger"></span>
+    </button>
+
+    <ul class="navbar-menu" id="navbarMenu">
+      <li><a href="{{ '/about' | relative_url }}">About Us</a></li>
+      <li><a href="{{ '/activities' | relative_url }}">Activities</a></li>
+      <li><a href="{{ '/events' | relative_url }}">Events</a></li>
+      <li><a href="{{ '/licensing' | relative_url }}">Licensing</a></li>
+      <li><a href="{{ '/membership' | relative_url }}">Membership</a></li>
+      <li><a href="{{ '/museum-ships' | relative_url }}">Museum Ships</a></li>
+      <li><a href="{{ '/repeaters' | relative_url }}">Repeaters</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navbarMenu').classList.toggle('active');
+}
+</script>

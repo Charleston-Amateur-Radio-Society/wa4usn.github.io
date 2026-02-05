@@ -1,0 +1,30 @@
+---
+layout: default
+title: All Posts
+---
+
+<section class="post" style="background: var(--background);">
+  <div class="container">
+    <h1 style="margin-bottom: 2rem;">All Posts</h1>
+
+    <div class="posts-list">
+      {% for post in site.posts %}
+      <article class="post-card">
+        <div class="post-card-meta">
+          <span class="post-category">{{ post.category | default: "News" }}</span>
+          <span class="post-date">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm-8 4H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+            {{ post.date | date: "%b %d, %Y" }}
+          </span>
+        </div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">
+          Read More
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

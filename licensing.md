@@ -1,46 +1,58 @@
 ---
-layout: page
+layout: default
 title: Licensing
-permalink: /licensing/
 ---
 
+<section class="page-content">
+  <div class="container">
+    <h1>Licensing</h1>
 
-CARS conducts amateur radio training classes periodically. We use a one-and-a-half day review format, and bring in a test team after lunch on the second day. These classes are generally done on request by a community group, and we prefer 10-20 students. Most groups will allow outsiders to attend as well. There is no cost for the training, though you should purchase and review a training manual for yourself ahead of time. To request a class contact us at CARSinfo@wa4usn.org.
+    <p class="lead">Ready to get your amateur radio license? CARS offers training classes and exam sessions to help you get started.</p>
 
-CARS works with a Laurel-accredited volunteer examiner (VE) team. The team holds exam sessions on the second Saturday of  April, June, August, October, and December at 9 am at the Tall Pines Baptist Church in Ladson, SC (next to the American Biker store). February sessions are held at the Charleston Hamfest on the first Saturday at 1 pm.  Walk-ins are accepted, but pre-registration for these sessions is strongly preferred.  A valid email address is required.
+    <h2>Training Classes</h2>
+    <p>CARS offers amateur radio training using a one-and-a-half day format with a test team after lunch on the second day. Classes are request-based, with a preferred class size of 10-20 students.</p>
+    <ul>
+      <li><strong>Cost:</strong> Free (students should purchase their own study manual)</li>
+      <li><strong>Contact:</strong> <a href="mailto:CARSinfo@wa4usn.org">CARSinfo@wa4usn.org</a></li>
+    </ul>
 
-To register for a test session, go to https://hamstudy.org/sessions/laurel/29407/inperson
+    <h2>Exam Sessions</h2>
 
-In order to take a test, you are required to bring the following to the VE session:
+    <h3>CARET VE Team (Laurel-accredited)</h3>
+    <ul>
+      <li><strong>Schedule:</strong> 2nd Saturday of April, June, August, October, December at 9am</li>
+      <li><strong>Location:</strong> Tall Pines Baptist Church, Ladson, SC</li>
+      <li><strong>February:</strong> Charleston Hamfest (1st Saturday at 1pm)</li>
+      <li><strong>Walk-ins accepted;</strong> pre-registration preferred</li>
+    </ul>
+    <p><strong>Register:</strong> <a href="https://hamstudy.org/sessions/laurel/29407/inperson" target="_blank">hamstudy.org</a></p>
+    <p><strong>Contact:</strong> Tom AJ4UQ, (843) 619-7388, <a href="mailto:CARET.VE@gmail.com">CARET.VE@gmail.com</a></p>
 
-A photo ID, or two non-photo IDs
+    <h3>VE of SC Team</h3>
+    <ul>
+      <li><strong>Schedule:</strong> 3rd Wednesday monthly at 7pm</li>
+      <li><strong>Contact:</strong> Lowcountry VE, (803) 792-1248</li>
+      <li><strong>Website:</strong> <a href="https://www.tridenthams.org/license-testing/" target="_blank">tridenthams.org/license-testing</a></li>
+    </ul>
 
-Your Federal Registration Number (FRN). If you do not already have one, go to the FCC Registration site and request a FRN. If you already have an amateur or GMRS license, you have an FRN. The FCC will not accept a SSN on your application.*
+    <h2>What to Bring</h2>
+    <ul>
+      <li>Photo ID</li>
+      <li>FRN (Federal Registration Number) or request one from the FCC beforehand</li>
+      <li>Completed Laurel application</li>
+      <li>Copies of current or expired license (if upgrading)</li>
+      <li>Any unused CSCEs (Certificate of Successful Completion of Examination)</li>
+    </ul>
+    <p>Items can be provided prior to the test session through pre-registration.</p>
 
-A filled-out Laurel VEC application. We use this information to create the Form 605 application for the FCC.*
+    <h2>FCC Fees</h2>
+    <p>The FCC charges <strong>$35 for new licenses</strong> (effective April 19, 2022). Payment is handled directly with the FCC within ten days of application submission.</p>
 
-If you are already licensed, the original and copy for us of your license.*
-
-If you have any Certificates of Successful Completion of Examination (CSCEs) that have not been used for license credit, bring the original and a copy for us of each CSCE.
-
-If you are applying for credit for an expired pre-1987 General class license, bring proof of that license. A copy of an old call book showing your record should be sufficient.*
-* these items can be provided to us prior to the test session through pre-registration.
-
-For more information please contact:
-
-Tom, AJ4UQ
-Phone: (843) 619-7388
-Email: CARET.VE@gmail.com
-https://www.laurelvec.com/index.php?team=CARET
-
-Starting on 19 April 2022 the FCC charges $35 for licenses (initial grant, renewal, vanity call application). The VE team does not handle those transactions; you will work directly with the FCC. In short, when your application is submitted, the FCC will email you instructions for payment. You will have ten days to pay. 
-
-Another local team, VE of SC, holds test sessions on the third Wednesday night of each month at 7 pm. Pre-registration is encouraged.
-
-For more information, please contact:
-
-Lowcountry VE Team
-Phone: (803) 792-1248
-https://www.tridenthams.org/license-testing/
-
-More information on licensing is available at the ARRL site: http://www.arrl.org/getting-licensed
+    <h2>Additional Resources</h2>
+    <ul>
+      <li><a href="http://www.arrl.org/getting-licensed" target="_blank">ARRL Getting Licensed</a></li>
+      <li><a href="https://hamstudy.org" target="_blank">HamStudy.org</a> - Free practice exams</li>
+      <li><a href="https://www.fcc.gov/wireless/support/universal-licensing-system-uls-resources" target="_blank">FCC Universal Licensing System</a></li>
+    </ul>
+  </div>
+</section>

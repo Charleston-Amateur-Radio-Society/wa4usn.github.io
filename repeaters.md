@@ -1,549 +1,112 @@
 ---
-layout: page
+layout: default
 title: Repeaters
-permalink: /repeaters/
 ---
 
+<section class="page-content">
+  <div class="container">
+    <h1>Repeaters</h1>
 
-## Repeaters
+    <p class="lead">The South Carolina Lowcountry has a large number of repeaters, many of which are linked by radio – not internet – for reliability.</p>
 
-The South Carolina Lowcountry has a large number of repeaters, many of which are linked by radio -- not internet -- for reliability. When you ask "what repeater am I on?" you'll need to provide a bit more information since you could be talking to someone on a different machine across the state.
+    <h2>VHF Repeaters (2 Meters)</h2>
+    <div class="repeater-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Frequency</th>
+            <th>PL Tone</th>
+            <th>Callsign</th>
+            <th>Height</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Adams Run</td><td>147.345+</td><td>141.3</td><td>K4IUG</td><td>—</td><td>T</td></tr>
+          <tr><td>Awendaw (Chan. 5 Tower)</td><td>146.760-</td><td>123.0</td><td>WR4SC</td><td>855'</td><td>*31</td></tr>
+          <tr><td>Columbia (I-77 & I-20)</td><td>146.715-</td><td>91.5</td><td>WR4SC</td><td>825'</td><td>*32</td></tr>
+          <tr><td>Conway (SCETV Tower)</td><td>146.715-</td><td>162.2</td><td>WR4SC</td><td>480'</td><td>*30</td></tr>
+          <tr><td>Dorchester</td><td>147.180+</td><td>123.0</td><td>W4HNK</td><td>280'</td><td>—</td></tr>
+          <tr><td>Florence (SCETV Tower)</td><td>146.685-</td><td>91.5</td><td>WR4SC</td><td>480'</td><td>*35</td></tr>
+          <tr><td>Florence</td><td>147.195+</td><td>123.0</td><td>W4APE</td><td>—</td><td>P</td></tr>
+          <tr><td>Georgetown Mem. Hospital</td><td>146.700-</td><td>123.0</td><td>W4HRS</td><td>60'</td><td>W</td></tr>
+          <tr><td>Georgetown</td><td>147.375+</td><td>123.0</td><td>NE4SC</td><td>—</td><td>—</td></tr>
+          <tr><td>Goose Creek</td><td>146.610-</td><td>123.0</td><td>W4BRK</td><td>450'</td><td>—</td></tr>
+          <tr><td>Greeleyville</td><td>145.230-</td><td>123.0</td><td>W4APE</td><td>—</td><td>P</td></tr>
+          <tr><td>Knightsville</td><td>146.940-</td><td>123.0</td><td>WA4USN</td><td>280'</td><td>K</td></tr>
+          <tr><td>Moncks Corner EOC</td><td>145.490-</td><td>103.5</td><td>W4HRS</td><td>150'</td><td>W</td></tr>
+          <tr><td>Moncks Corner</td><td>147.150+</td><td>91.5</td><td>WD4NUN</td><td>150'</td><td>—</td></tr>
+          <tr><td>Moncks Corner</td><td>147.210+</td><td>210.7</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Orangeburg</td><td>146.880-</td><td>123.0</td><td>WR4SC</td><td>380'</td><td>*39</td></tr>
+          <tr><td>Russellville</td><td>147.300+</td><td>162.2</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td>Rutledge Tower (MUSC)</td><td>145.450-</td><td>123.0</td><td>W4HRS</td><td>160'</td><td>T</td></tr>
+          <tr><td>St. George</td><td>147.045+</td><td>103.5</td><td>K4ILT</td><td>—</td><td>K</td></tr>
+          <tr><td>Santee</td><td>147.225+</td><td>None</td><td>W4DTW</td><td>—</td><td>—</td></tr>
+          <tr><td>Seabrook Island</td><td>145.410-</td><td>123.0</td><td>WA4USN</td><td>150'</td><td>K</td></tr>
+          <tr><td>Summerville (I-26)</td><td>146.835-</td><td>None</td><td>KT4YW</td><td>—</td><td>—</td></tr>
+          <tr><td>Summerville Med. Center</td><td>146.985-</td><td>123.0</td><td>W1GRE</td><td>65'</td><td>W</td></tr>
+          <tr><td>Trident Medical Center</td><td>146.730-</td><td>123.0</td><td>W4HRS</td><td>94'</td><td>W</td></tr>
+          <tr><td>USS Yorktown</td><td>146.790-</td><td>123.0</td><td>WA4USN</td><td>—</td><td>K</td></tr>
+          <tr><td>Wallace (SCETV Tower)</td><td>147.105+</td><td>123.0</td><td>WR4SC</td><td>380'</td><td>*33</td></tr>
+          <tr><td>Walterboro</td><td>145.390-</td><td>None</td><td>KG4BZN</td><td>—</td><td>L</td></tr>
+          <tr><td>Walterboro</td><td>147.135+</td><td>156.7</td><td>KG4BZN</td><td>—</td><td>L</td></tr>
+          <tr><td>Whitehall (SCETV Tower)</td><td>146.715-</td><td>123.0</td><td>WR4SC</td><td>835'</td><td>*34</td></tr>
+          <tr><td>Whitehall (SCETV Tower)</td><td>146.910-</td><td>156.7</td><td>WA4SJS</td><td>—</td><td>L</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-<figure class="wp-block-table">
-<table rules="none" align="center" cellspacing="1" cellpadding="1" border="0">
- <tbody><tr>
-  <td class="text06bk" align="center">&nbsp; &nbsp; &nbsp;</td>
-  <td class="head16vi" align="center">Location</td>
-  <td class="head16vi" align="center">Freq.</td>
-  <td class="head16vi" align="center">Tone</td>
-  <td class="head16vi" align="center">&nbsp; &nbsp; &nbsp; Lat. - Long.</td>
-  <td class="head16vi" align="center">Antenna Height</td>
-  <td class="head16vi" align="center">Callsign</td>
-  <td class="head16vi" align="center">Link</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Adams Run</td>
-  <td class="text12yl" align="center">147.345+</td>
-  <td class="text12yl" align="center">141.3</td>
-  <td class="text12yl" align="center">N 32° 43' 4" &nbsp; W 80° 18' 49"</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">K4IUG</td>
-  <td class="text12vi" align="center">T</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Awendaw (Chan. 5 Tower)</td>
-  <td class="text12gr" align="center">146.760-</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 32° 55' 28" &nbsp; W 79° 41' 58"</td>
-  <td class="text12gr" align="center">855</td>
-  <td class="text129gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *31</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Awendaw (Chan. 5 Tower)</td>
-  <td class="text12gr" align="center">441.725+</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 32° 55' 28" &nbsp; W 79° 41' 58"</td>
-  <td class="text12gr" align="center">950</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *51 <font color="#FF00FF">H</font></td>
- </tr>
-<tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Colleton County Medical</td>
-  <td class="text12rd" align="center">444.850+</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 32° 55' 19" &nbsp; W 80° 40' 30"</td>
-  <td class="text12rd" align="center">60</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">W</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Columbia (I-77 &amp; I-20)</td>
-  <td class="text12gr" align="center">146.715-</td>
-  <td class="text12gr" align="center">91.5</td>
-  <td class="text12gr" align="center">N 34° 07' 07" &nbsp; W 80° 56' 13"</td>
-  <td class="text12gr" align="center">825</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *32</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Columbia (I-77 &amp; I-20)</td>
-  <td class="text12gr" align="center">441.725+</td>
-  <td class="text12gr" align="center">91.5</td>
-  <td class="text12gr" align="center">N 34° 07' 07" &nbsp; W 80° 56' 13"</td>
-  <td class="text12gr" align="center">800</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *52 <font color="#FF00FF">H</font></td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Conway (SCETV Tower)</td>
-  <td class="text12gr" align="center">146.715-</td>
-  <td class="text12gr" align="center">162.2</td>
-  <td class="text12gr" align="center">N 33° 56' 59" &nbsp; W 79° 06' 31"</td>
-  <td class="text12gr" align="center">480</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *30</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Conway (SCETV Tower)</td>
-  <td class="text12gr" align="center">441.675+</td>
-  <td class="text12gr" align="center">162.2</td>
-  <td class="text12gr" align="center">N 33° 56' 59" &nbsp; W 79° 06' 31"</td>
-  <td class="text12gr" align="center">500</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *50 <font color="#FF00FF">H</font></td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Dorchester</td>
-  <td class="text12yl" align="center">147.180+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">N 33° 08' 31" &nbsp; W 80° 21' 03"</td>
-  <td class="text12yl" align="center">280</td>
-  <td class="text12yl" align="center">W4HNK</td>
-  <td class="text12yl" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Dorchester</td>
-  <td class="text12yl" align="center">443.800+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">N 33° 08' 31" &nbsp; W 80° 21' 03"</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">W4HNK</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Florence (SCETV Tower)</td>
-  <td class="text12gr" align="center">146.685-</td>
-  <td class="text12gr" align="center">91.5</td>
-  <td class="text12gr" align="center">N 34° 16' 48" &nbsp; W 79° 44' 34"</td>
-  <td class="text12gr" align="center">480</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *35</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Florence</td>
-  <td class="text12yl" align="center">147.195+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">W4APE</td>
-  <td class="text12vi" align="center">P</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Florence (SCETV Tower)</td>
-  <td class="text12gr" align="center">441.575+</td>
-  <td class="text12gr" align="center">91.5</td>
-  <td class="text12gr" align="center">N 34° 16' 48" &nbsp; W 79° 44' 34"</td>
-  <td class="text12gr" align="center">500</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *55 <font color="#FF00FF">H</font></td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Florence</td>
-  <td class="text12yl" align="center">442.050+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">W4APE</td>
-  <td class="text12vi" align="center">H P</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Georgetown Mem. Hospital</td>
-  <td class="text12rd" align="center">146.700-</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 33° 22' 46" &nbsp; W 79° 17' 05"</td>
-  <td class="text12rd" align="center">60</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">W</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Georgetown</td>
-  <td class="text12yl" align="center">147.375+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">NE4SC</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Georgetown</td>
-  <td class="text12yl" align="center">444.925+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">NE4SC</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Goose Creek</td>
-  <td class="text12yl" align="center">146.610-</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">N 33° 07' 32" &nbsp; W 80° 02' 20"</td>
-  <td class="text12yl" align="center">450</td>
-  <td class="text12yl" align="center">W4BRK</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Greeleyville</td>
-  <td class="text12yl" align="center">145.230-</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">W4APE</td>
-  <td class="text12vi" align="center">P</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Greeleyville</td>
-  <td class="text12yl" align="center">444.750+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">W4APE</td>
-  <td class="text12vi" align="center">P</td>
- </tr>
- <tr>
-  <td class="text09yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Knightsville</td>
-  <td class="text12yl" align="center">146.940-</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">N 32° 59' 38" &nbsp; W 80° 16' 12"</td>
-  <td class="text12yl" align="center">280</td>
-  <td class="text12yl" align="center">WA4USN</td>
-  <td class="text12vi" align="center">K</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Knightsville</td>
-  <td class="text12yl" align="center">441.450+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">N 32° 59' 38" &nbsp; W 80° 16' 12"</td>
-  <td class="text12yl" align="center">260</td>
-  <td class="text12yl" align="center">WA4USN</td>
-  <td class="text12vi" align="center">H K A</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Moncks Corner EOC</td>
-  <td class="text12rd" align="center">145.490-</td>
-  <td class="text12rd" align="center">103.5</td>
-  <td class="text12rd" align="center">N 33° 11' 56" &nbsp; W 80° 00' 25"</td>
-  <td class="text12rd" align="center">150</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">W</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Moncks Corner</td>
-  <td class="text12yl" align="center">147.150+</td>
-  <td class="text12yl" align="center">91.5</td>
-   <td class="text12yl" align="center">N 33° 11' 56" &nbsp; W 80° 00' 25"</td>
-  <td class="text12yl" align="center">150</td>
-  <td class="text12yl" align="center">WD4NUN</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Moncks Corner</td>
-  <td class="text12yl" align="center">147.210+</td>
-  <td class="text12yl" align="center">210.7</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Orangeburg</td>
-  <td class="text12gr" align="center">146.880-</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 33° 32' 35" &nbsp; W 80° 49' 27"</td>
-  <td class="text12gr" align="center">380</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *39</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Orangeburg</td>
-  <td class="text12gr" align="center">441.750+</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 33° 32' 35" &nbsp; W 80° 49' 27"</td>
-  <td class="text12gr" align="center">400</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *59 <font color="#FF00FF">H</font></td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Russellville</td>
-  <td class="text12yl" align="center">147.300+</td>
-  <td class="text12yl" align="center">162.2</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Rutledge Tower (MUSC)</td>
-  <td class="text12rd" align="center">145.450-</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 32° 47' 03" &nbsp; W 79° 56' 42"</td>
-  <td class="text12rd" align="center">160</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">T</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Rutledge Tower (MUSC)</td>
-  <td class="text12rd" align="center">444.825+</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 32° 47' 03" &nbsp; W 79° 56' 42"</td>
-  <td class="text12rd" align="center">160</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">W</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;St. Francis Hospital</td>
-  <td class="text12rd" align="center">444.775+</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 32° 48' 30" &nbsp; W 80° 02' 31"</td>
-  <td class="text12rd" align="center">40</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">W</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;St. George</td>
-  <td class="text12yl" align="center">147.045+</td>
-  <td class="text12yl" align="center">103.5</td>
-  <td class="text12yl" align="center">N 33° 10' 25" &nbsp; W 80° 34' 26"</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">K4ILT</td>
-  <td class="text12vi" align="center">K</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Santee</td>
-  <td class="text12yl" align="center">147.225+</td>
-  <td class="text12yl" align="center">None</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">W4DTW</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Seabrook Island</td>
-  <td class="text12yl" align="center">145.410-</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">N 32° 34' 50" &nbsp; W 80° 09' 35"</td>
-  <td class="text12yl" align="center">150</td>
-  <td class="text12yl" align="center">WA4USN</td>
-  <td class="text12vi" align="center">K</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;S'ville (OFF AIR)</td>
-  <td class="text12yl" align="center">147.270+</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">W4ANK</td>
-  <td class="text12vi" align="center">T</td>
- </tr>
- <tr>
-  <td class="text09yl" align="center">Off Air</td>
-  <td class="text12yl" align="left">&nbsp;Summerville (I-26)</td>
-  <td class="text12yl" align="center">146.835-</td>
-  <td class="text12yl" align="center">None</td>
-  <td class="text12yl" align="center">N 33° 02' 20" &nbsp; W 80° 09' 16"</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">KT4YW</td>
-  <td class="text12vi" align="center">&nbsp;</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Summerville Med. Center</td>
-  <td class="text12rd" align="center">146.985-</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 32° 57' 57" &nbsp; W 80° 09' 27"</td>
-  <td class="text12rd" align="center">65</td>
-  <td class="text12rd" align="center">W1GRE</td>
-  <td class="text12vi" align="center">W</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Trident Medical Center</td>
-  <td class="text12rd" align="center">146.730-</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 32° 58' 35" &nbsp; W 80° 04' 24"</td>
-  <td class="text12rd" align="center">94</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">W</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12rd" align="left">&nbsp;Trident Medical Center</td>
-  <td class="text12rd" align="center">442.150+</td>
-  <td class="text12rd" align="center">123.0</td>
-  <td class="text12rd" align="center">N 32° 58' 35" &nbsp; W 80° 04' 24"</td>
-  <td class="text12rd" align="center">94</td>
-  <td class="text12rd" align="center">W4HRS</td>
-  <td class="text12vi" align="center">H T</td>
- </tr>
- <tr>
-  <td class="text09yl" align="center">Tone 4 Nets</td>
-  <td class="text12yl" align="left">&nbsp;USS Yorktown</td>
-  <td class="text12yl" align="center">146.790-</td>
-  <td class="text12yl" align="center">123.0</td>
-  <td class="text12yl" align="center">N 32° 47' 26" &nbsp; W 79° 54' 29"</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">WA4USN</td>
-  <td class="text12vi" align="center">K</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Wallace (SCETV Tower)</td>
-  <td class="text12gr" align="center">147.105+</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 32° 48' 08" &nbsp; W 80° 01' 25"</td>
-  <td class="text12gr" align="center">380</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *33</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Wallace (SCETV Tower)</td>
-  <td class="text12gr" align="center">441.575+</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 32° 48' 08" &nbsp; W 80° 01' 25"</td>
-  <td class="text12gr" align="center">400</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *53 <font color="#FF00FF">H</font></td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Walterboro</td>
-  <td class="text12yl" align="center">145.390-</td>
-  <td class="text12yl" align="center">None</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">KG4BZN</td>
-  <td class="text12vi" align="center">L</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Walterboro</td>
-  <td class="text12yl" align="center">147.135+</td>
-  <td class="text12yl" align="center">156.7</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">KG4BZN</td>
-  <td class="text12vi" align="center">L</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Walterboro</td>
-  <td class="text12yl" align="center">444.550+</td>
-  <td class="text12yl" align="center">156.7</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">KG4BZN</td>
-  <td class="text12vi" align="center">L</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Whitehall (SCETV Tower)</td>
-  <td class="text12gr" align="center">146.715-</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 32° 42' 43" &nbsp; W 80° 40' 54"</td>
-  <td class="text12gr" align="center">835</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *34</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Whitehall (SCETV Tower)</td>
-  <td class="text12yl" align="center">146.910-</td>
-  <td class="text12yl" align="center">156.7</td>
-  <td class="text12yl" align="center">N 32° 42' 43" &nbsp; W 80° 40' 54"</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12l" align="center">WA4SJS</td>
-  <td class="text12vi" align="center">L</td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12gr" align="left">&nbsp;Whitehall (SCETV Tower)</td>
-  <td class="text12gr" align="center">441.675+</td>
-  <td class="text12gr" align="center">123.0</td>
-  <td class="text12gr" align="center">N 32° 42' 43" &nbsp; W 80° 40' 54"</td>
-  <td class="text12gr" align="center">815</td>
-  <td class="text12gr" align="center">WR4SC</td>
-  <td class="text12gr" align="center">Link *54 <font color="#FF00FF">H</font></td>
- </tr>
- <tr>
-  <td class="text06yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="left">&nbsp;Whitehall (SCETV Tower)</td>
-  <td class="text12yl" align="center">444.075+</td>
-  <td class="text12yl" align="center">156.7</td>
-  <td class="text12yl" align="center">N 32° 42' 43" &nbsp; W 80° 40' 54"</td>
-  <td class="text12yl" align="center">&nbsp;</td>
-  <td class="text12yl" align="center">KG4BZN</td>
-  <td class="text12vi" align="center">H L</td>
- </tr>
-</tbody></table>
-<table align="center" cellspacing="0" cellpadding="0" background="#000000" border="0" width="98%">
- <tbody><tr><td colspan="2">
-<img src="{{ "/assets/images/1x1clear.gif" | relative_url }}" alt="Description" width="1" height="3" border="0" align="left" /></td></tr> <!-- Spacer -->
-       <tr align="center">
-        <td class="text12rd" align="left">&nbsp;RED text = repeater part of HEART system</td>
-        <td class="text12gr" align="right">GREEN text = repeater part of SCHEART system, to link to another SCHEART&nbsp;</td>
-       </tr>
-</tbody></table>
-<table align="center" cellspacing="0" cellpadding="0" background="#000000" border="0" width="98%">
-       <tbody><tr align="center">
-        <td class="text12vi" align="left">&nbsp;A = link via Awendaw Hub</td>
-        <td class="text12vi" align="center">H = repeater linking HUB</td>
-        <td class="text12vi" align="center">K = link via Knightsville Hub</td>
-        <td class="text12gr" align="right">repeater enter link code; 73 to drop link&nbsp;</td>
-       </tr>
-</tbody></table>
-<table align="center" cellspacing="0" cellpadding="0" background="#000000" border="0" width="98%">
-       <tbody><tr align="center">
-        <td class="text12vi" align="left">&nbsp;L = Low Country Rptr. System</td>
-        <td class="text12vi" align="center">P = Palmetto Amateur Link System</td>
-        <td class="text12vi" align="center">T = link via Trident Hub</td>
-        <td class="text12vi" align="right">W = link via Wallace Hub&nbsp;</td>
-       </tr>
- <tr><td colspan="3">
-<img src="{{ "/assets/images/1x1clear.gif" | relative_url }}" alt="Description" width="1" height="3" border="0" align="left" /></td></tr> <!-- Spacer -->
+    <h2>UHF Repeaters (70 Centimeters)</h2>
+    <div class="repeater-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Frequency</th>
+            <th>PL Tone</th>
+            <th>Callsign</th>
+            <th>Height</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Awendaw (Chan. 5 Tower)</td><td>441.725+</td><td>123.0</td><td>WR4SC</td><td>950'</td><td>H *51</td></tr>
+          <tr><td>Colleton County Medical</td><td>444.850+</td><td>123.0</td><td>W4HRS</td><td>60'</td><td>W</td></tr>
+          <tr><td>Columbia (I-77 & I-20)</td><td>441.725+</td><td>91.5</td><td>WR4SC</td><td>800'</td><td>H *52</td></tr>
+          <tr><td>Conway (SCETV Tower)</td><td>441.675+</td><td>162.2</td><td>WR4SC</td><td>500'</td><td>H *50</td></tr>
+          <tr><td>Dorchester</td><td>443.800+</td><td>123.0</td><td>W4HNK</td><td>—</td><td>—</td></tr>
+          <tr><td>Florence (SCETV Tower)</td><td>441.575+</td><td>91.5</td><td>WR4SC</td><td>500'</td><td>H *55</td></tr>
+          <tr><td>Florence</td><td>442.050+</td><td>123.0</td><td>W4APE</td><td>—</td><td>H P</td></tr>
+          <tr><td>Georgetown</td><td>444.925+</td><td>123.0</td><td>NE4SC</td><td>—</td><td>—</td></tr>
+          <tr><td>Greeleyville</td><td>444.750+</td><td>123.0</td><td>W4APE</td><td>—</td><td>P</td></tr>
+          <tr><td>Knightsville</td><td>441.450+</td><td>123.0</td><td>WA4USN</td><td>260'</td><td>H K A</td></tr>
+          <tr><td>Orangeburg</td><td>441.750+</td><td>123.0</td><td>WR4SC</td><td>400'</td><td>H *59</td></tr>
+          <tr><td>Rutledge Tower (MUSC)</td><td>444.825+</td><td>123.0</td><td>W4HRS</td><td>160'</td><td>W</td></tr>
+          <tr><td>St. Francis Hospital</td><td>444.775+</td><td>123.0</td><td>W4HRS</td><td>40'</td><td>W</td></tr>
+          <tr><td>Trident Medical Center</td><td>442.150+</td><td>123.0</td><td>W4HRS</td><td>94'</td><td>H T</td></tr>
+          <tr><td>Wallace (SCETV Tower)</td><td>441.575+</td><td>123.0</td><td>WR4SC</td><td>400'</td><td>H *53</td></tr>
+          <tr><td>Walterboro</td><td>444.550+</td><td>156.7</td><td>KG4BZN</td><td>—</td><td>L</td></tr>
+          <tr><td>Whitehall (SCETV Tower)</td><td>441.675+</td><td>123.0</td><td>WR4SC</td><td>815'</td><td>H *54</td></tr>
+          <tr><td>Whitehall (SCETV Tower)</td><td>444.075+</td><td>156.7</td><td>KG4BZN</td><td>—</td><td>H L</td></tr>
+        </tbody>
+      </table>
+    </div>
 
+    <h2>Link Legend</h2>
+    <ul>
+      <li><strong>A</strong> - Awendaw Hub</li>
+      <li><strong>H</strong> - HUB repeater</li>
+      <li><strong>K</strong> - Knightsville Hub</li>
+      <li><strong>L</strong> - Low Country Repeater System</li>
+      <li><strong>P</strong> - Palmetto Amateur Link System</li>
+      <li><strong>T</strong> - Trident Hub</li>
+      <li><strong>W</strong> - Wallace Hub</li>
+      <li><strong>*XX</strong> - DTMF code for linking</li>
+    </ul>
 
-</tbody></table>
-</figure>
+    <h2>APRS Digipeaters</h2>
+    <p>CARS operates three APRS digipeaters in the Lowcountry for position reporting and messaging on 144.390 MHz.</p>
 
-<div class="gallery">
-  <img src="{{ "/assets/images/RepeaterLinks-697x1024.jpg" | relative_url }}" alt="Description">
-  <img src="{{ "/assets/images/repeater_map6-1024x571.gif" | relative_url }}" alt="Description"> 
-</div>
-
+  </div>
+</section>

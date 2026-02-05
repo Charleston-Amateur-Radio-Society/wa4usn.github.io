@@ -1,8 +1,23 @@
 ---
-layout: post
-title: "Skywarn Recognition Day… not this year"
+title: "Skywarn Recognition Day Update"
 date: 2025-12-04
-excerpt: "A brief summary of my awesome blog post."
+category: Events
 ---
 
-The National Weather Service is unable to host Skywarn Recognition Day this year. That’s a bit of a disappointment, as I enjoyed working the early morning shift at NWS Charleston, watching the forecasters at work.
+This year's Skywarn Recognition Day will be observed differently due to scheduling conflicts at the National Weather Service office.
+
+## What is Skywarn Recognition Day?
+
+Skywarn Recognition Day celebrates the contributions that amateur radio operators make to the National Weather Service during severe weather events. Skywarn spotters provide critical ground-truth reports that help forecasters issue timely warnings.
+
+## Get Involved
+
+Even though the formal event won't take place as usual this year, we encourage all members to:
+
+- Complete Skywarn spotter training if you haven't already
+- Check into our weekly nets
+- Be prepared to assist during severe weather
+
+Stay tuned for updates about alternative activities.
+
+73 de WA4USN

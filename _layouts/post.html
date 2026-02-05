@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="container">
+    <header class="post-header">
+      <div class="post-meta">
+        <span class="post-category">{{ page.category | default: "News" }}</span>
+        <span class="post-date">{{ page.date | date: "%b %d, %Y" }}</span>
+      </div>
+      <h1>{{ page.title }}</h1>
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <a href="{{ '/' | relative_url }}" class="back-link">&larr; Back to Home</a>
+    </footer>
+  </div>
+</article>

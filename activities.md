@@ -1,19 +1,65 @@
 ---
-layout: page
+layout: default
 title: Activities
-permalink: /activities/
 ---
 
-<p>CARS is active in the community. Here are some of our regularly scheduled events. Registration for 10k, bike rides, and similar events is done at <a href="https://tinyurl.com/CARS-events">https://tinyurl.com/CARS-events</a>.</p>
+<section class="page-content">
+  <div class="container">
+    <h1>Activities</h1>
 
-<figure class="wp-block-table"><table><thead><tr><th> When </th><th> What </th><th> Where </th><th>Comments </th></tr></thead><tbody><tr><td>2nd Monday every month at 7pm</td><td>Membership meeting</td><td>Golden Corral, North Charleston</td><td></td></tr><tr><td>1st Saturday in February</td><td>Charleston Hamfest</td><td>TBD</td><td></td></tr><tr><td>M-W-F at 9am</td><td>Breakfast</td><td>Bojangles, Ashley Phosphate Rd, North Charleston</td><td></td></tr><tr><td>April</td><td>Lowcountry Century bike ride</td><td>Awendaw area</td><td>Week after the Bridge Run</td></tr><tr><td>October</td><td>IOP 10k</td><td>Isle of Palms</td><td></td></tr><tr><td>3rd Saturday every month at 1pm</td><td>Operating Day</td><td>USS Yorktown club room</td><td></td></tr><tr><td>November</td><td>LowVelo Bike Ride</td><td>Awendaw area</td><td></td></tr><tr><td>1st weekend in June</td><td>Museum Ships on the Air</td><td>Patriots Point Maritime Museum</td><td></td></tr><tr><td>4th full weekend in June</td><td>ARRL Field Day</td><td>USS Yorktown</td><td></td></tr><tr><td>3d weekend in January</td><td>Winter Field Day</td><td>TBD</td><td></td></tr><tr><td>April-June</td><td>Hurricane Expos</td><td>Various</td><td></td></tr><tr><td>2nd Saturday of even months at 9am</td><td>VE Testing</td><td>Tall Pines Baptist Church, Ladson</td><td></td></tr><tr><td>3rd Saturday at 9am</td><td>Charleston County ARES meeting</td><td>Club Room, USS Yorktown</td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td>updated 22 May 2025</td><td></td><td></td><td></td></tr></tbody></table></figure>
+    <p class="lead">CARS offers a variety of activities for amateur radio operators of all experience levels.</p>
 
-<p>Here's the suggested text for Thursday's Newcomers Net:<br></p>
+    <h2>Regular Scheduled Events</h2>
 
-<p>NEWCOMERS NET PREAMBLE</p>
+    <div class="schedule-grid">
+      <div class="schedule-item">
+        <h3>Membership Meeting</h3>
+        <p><strong>2nd Monday every month at 7pm</strong></p>
+        <p>Golden Corral, North Charleston (near Tanger Outlets)</p>
+      </div>
 
-<p>This weeks Low Country Newcomers Net will be starting in about 5 minutes,<br>Anyone wanting to use the repeaters please have your call completed before 8:00<br>PM so we can start the Net on time.<br>Does anyone wish to use the repeaters before we start the net? If so please call<br>now.<br>At 8:00 PM, make the following announcement and start the Net.<br>Attention All Amateurs, Attention All Amateurs, and good evening. This is the<br>Lowcountry Newcomers Net. Your Net Controller for this evening is CALL <strong><em>_ Name</em> QTH <em>__</em></strong>.<br>This is an informal net providing a place for all Hams to meet and get acquainted<br>with each other. We invite all to check in and enjoy the hobby of Ham Radio.<br>At this time we would like to thank the Charleston Amateur Radio Society, Heart<br>and TARC, for the use of their linked repeater systems.<br>All traffic should be directed to NET CONTROL. In case of an emergency, please<br>break and the repeater system will be turned over to you.<br>Are there any announcements or bulletins for the net, if so please call now?<br>At this time I will take any mobile, short time or in and out check-ins. Please give<br>me your CALL, NAME and Location slowly. A-F, G-L, M-R, S-Z. (the first letter<br>after your call sign number…)<br>At this time I will take regular check-ins, Regular check-ins mean you would like to</p>
+      <div class="schedule-item">
+        <h3>Operating Day</h3>
+        <p><strong>3rd Saturday every month at 1pm</strong></p>
+        <p>USS Yorktown Club Room, Patriots Point</p>
+      </div>
 
-<p>stay for the rag chew. Please give me your CALL, NAME and Location slowly. A-<br>F, G-L, M-R, S-Z. (the first letter after your call sign number…)</p>
+      <div class="schedule-item">
+        <h3>VE Testing</h3>
+        <p><strong>2nd Saturday of even months at 9am</strong></p>
+        <p>Tall Pines Baptist Church, Ladson</p>
+      </div>
 
-<p>Call on your mobile and short time check-ins first. Call on your regular check-ins<br>next, pausing about every 5 people to confirm their check-ins and ask for further<br>check-ins.<br>Ask if there is any other business or comments or late check-ins for the Net?<br>I would like to thank everyone for checking into the Net tonight. These repeaters<br>will now be returned to their normal Amateur use. This is CALL <strong><em>_ Name __</em></strong> and I’ll be clear.</p>
+      <div class="schedule-item">
+        <h3>Charleston County ARES</h3>
+        <p><strong>3rd Saturday at 9am</strong></p>
+        <p>USS Yorktown</p>
+      </div>
+
+      <div class="schedule-item">
+        <h3>Breakfast Social</h3>
+        <p><strong>Monday, Wednesday, Friday at 9am</strong></p>
+        <p>Bojangles on Ashley Phosphate Road, North Charleston</p>
+      </div>
+    </div>
+
+    <h2>Annual Events</h2>
+    <ul>
+      <li><strong>ARRL Field Day</strong> - June (4th full weekend)</li>
+      <li><strong>Museum Ships on the Air</strong> - June at Patriots Point</li>
+      <li><strong>Charleston Hamfest</strong> - February</li>
+      <li><strong>Cooper River Bridge Run</strong> - April</li>
+      <li><strong>Hurricane Preparedness Expos</strong> - April through June</li>
+    </ul>
+
+    <h2>Newcomers Net</h2>
+    <p>Our weekly Newcomers Net is an informal gathering where all hams can meet and get acquainted with each other. It's a great way to get started in amateur radio and learn from experienced operators.</p>
+    <p>The net features structured check-in procedures and designated time for "rag chew" conversations among participants.</p>
+
+    <h2>Emergency Communications</h2>
+    <p>CARS members are active in emergency communications through ARES (Amateur Radio Emergency Service). We maintain an emergency trailer with full communication capabilities and provide support during severe weather and public events.</p>
+
+    <h2>Get Involved</h2>
+    <p>Contact us at <a href="mailto:CARSinfo@wa4usn.org">CARSinfo@wa4usn.org</a> to learn more about participating in club activities.</p>
+  </div>
+</section>
