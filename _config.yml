@@ -1,8 +1,8 @@
 title: Charleston Amateur Radio Society
 description: Serving the Lowcountry amateur radio community since 1971
 callsign: WA4USN
-baseurl: ""
-url: ""
+baseurl: "/wa4usn"
+url: "https://liam-maheu.github.io"
 
 # Build settings
 markdown: kramdown
