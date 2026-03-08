@@ -1,5 +1,5 @@
 ---
-title: W1AW/4
+title: W1AW/4 Operating Opportunity
 ---
 
 In 2023, South Carolina Amateur Radio operators proudly participated in ARRL’s Year of the Volunteer (VOTA). In 2026, ARRL will shift the spotlight to the Year of the Club (COTA). Because our clubs depend so greatly on dedicated volunteers, I like to think of this year’s celebration as a combined COTA/VOTA effort.
