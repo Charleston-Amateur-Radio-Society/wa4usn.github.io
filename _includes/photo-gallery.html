@@ -1,21 +1,483 @@
+
+
+<!-- Tailwind CDN (remove if already in your layout) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 <style>
-    .image-gallery {overflow: auto; margin-left: -1%!important;}
-    .image-gallery li {float: left; display: block; margin: 0 0 1% 1%; width: 19%;}
-    .image-gallery li a {text-align: center; text-decoration: none!important; color: #777;}
-    .image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
-    .image-gallery li a img {width: 100%; display: block;}
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@300;400;500&display=swap');
+
+  :root {
+    --sand: #f5f0e8;
+    --ink: #1a1814;
+    --accent: #b8860b;
+    --muted: #8a8278;
+  }
+
+  body { background-color: var(--sand); }
+
+  .gallery-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+  }
+
+  .gallery-subtitle {
+    font-family: 'Jost', sans-serif;
+    color: var(--muted);
+    letter-spacing: 0.18em;
+    font-weight: 300;
+  }
+
+  /* Grid item */
+  .photo-card {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background: #e8e2d8;
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                filter 0.4s ease;
+    filter: saturate(0.85) contrast(1.05);
+  }
+
+  .photo-card:hover img {
+    transform: scale(1.06);
+    filter: saturate(1.1) contrast(1.0);
+  }
+
+  .photo-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(26, 24, 20, 0.45) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+
+  .photo-card:hover::after {
+    opacity: 1;
+  }
+
+  .photo-card .caption-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    color: #f5f0e8;
+    position: absolute;
+    bottom: 0.85rem;
+    left: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    text-transform: uppercase;
+  }
+
+  .photo-card:hover .caption-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Masonry-ish span variations */
+  .span-tall  { grid-row: span 2; }
+  .span-wide  { grid-column: span 2; }
+
+  /* Lightbox */
+  #lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(18, 16, 12, 0.94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  #lightbox.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #lightbox img {
+    max-width: min(90vw, 1100px);
+    max-height: 88vh;
+    object-fit: contain;
+    border: 1px solid rgba(245, 240, 232, 0.08);
+    box-shadow: 0 40px 120px rgba(0,0,0,0.7);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                opacity 0.35s ease;
+    transform: scale(0.95);
+    opacity: 0;
+  }
+
+  #lightbox.active img {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  #lightbox-caption {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  #lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.75rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.5rem;
+    color: rgba(245,240,232,0.5);
+    cursor: pointer;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    line-height: 1;
+  }
+
+  #lightbox-close:hover { color: #f5f0e8; }
+
+  #lightbox-prev,
+  #lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 1px solid rgba(245,240,232,0.15);
+    color: rgba(245,240,232,0.55);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  #lightbox-prev { left: 1.5rem; }
+  #lightbox-next { right: 1.5rem; }
+
+  #lightbox-prev:hover,
+  #lightbox-next:hover {
+    background: rgba(245,240,232,0.08);
+    color: #f5f0e8;
+    border-color: rgba(245,240,232,0.4);
+  }
+
+  /* Counter */
+  #lightbox-counter {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+  }
+
+  /* Divider */
+  .title-rule {
+    width: 48px;
+    height: 1px;
+    background: var(--accent);
+    margin: 1rem auto;
+  }
+
+  /* Responsive grid */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 260px;
+    gap: 6px;
+  }
+
+  @media (max-width: 768px) {
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 200px;
+    }
+    .span-wide { grid-column: span 1; }
+    .span-tall { grid-row: span 1; }
+  }
+
+  @media (max-width: 480px) {
+    .photo-grid {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 240px;
+    }
+  }
+
+  /* Fade-in on load */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .photo-card {
+    animation: fadeUp 0.5s ease both;
+  }
 </style>
 
-<div class="image-gallery">
-<div class="container">
-  {% for image in site.static_files %}
-    {% if image.path contains '/assets/photos/' %}
-      {% if image.extname == '.jpg' or image.extname == '.jpeg' or image.extname == '.png' or image.extname == '.gif' %}
-        <a href="{{ site.baseurl }}{{ image.path }}">
-          <img src="{{ site.baseurl }}{{ image.path }}" alt="Gallery Image">
-        </a>
-      {% endif %}
+<!-- ─── Page Header ─────────────────────────────── -->
+<header class="text-center py-16 px-4">
+  <p class="gallery-subtitle text-xs tracking-widest mb-4">— Charleston Amateur Radio Society —</p>
+  <h1 class="gallery-title text-5xl md:text-6xl font-light">Gallery</h1>
+  <div class="title-rule"></div>
+  <p class="gallery-subtitle text-xs mt-4">
+    {% if site.gallery_description %}
+      {{ site.gallery_description }}
+    {% else %}
+      A curated collection of CARS photographs
     {% endif %}
-  {% endfor %}
+  </p>
+</header>
+
+<!-- ─── Photo Grid ───────────────────────────────── -->
+<main class="max-w-6xl mx-auto px-4 pb-24">
+  <div class="photo-grid" id="gallery-grid">
+
+    <!--
+      HOW TO USE:
+      ─────────────────────────────────────────────────────────────
+      Add or remove <div class="photo-card"> blocks below.
+
+      Optional span classes:
+        span-tall  → double height (portrait emphasis)
+        span-wide  → double width  (landscape emphasis)
+
+      Each card needs:
+        data-src     = full-resolution image path
+        data-caption = text shown in lightbox (optional)
+
+      Liquid loop example (put photos in /assets/images/gallery/):
+-->
+      {% assign photos = site.static_files | where_exp: "f",
+          "f.path contains '/assets/photos/'" %}
+      {% for photo in photos %}
+        <div class="photo-card" 
+             data-src="{{ photo.path | relative_url }}"
+             data-caption="{{ photo.basename | replace: '-', ' ' | capitalize }}"
+             tabindex="0" role="button"
+             aria-label="View {{ photo.basename }}">
+          <img src="{{ photo.path | relative_url }}" 
+               alt="{{ photo.basename }}" loading="lazy">
+          <span class="caption-text">{{ photo.basename | replace: '-', ' ' }}</span>
+        </div>
+      {% endfor %}
+
+ <!--
+      ─────────────────────────────────────────────────────────────
+      Static example cards (replace src with your actual paths):
+    
+
+    <div class="photo-card span-tall"
+         data-src="/assets/images/gallery/photo-1.jpg"
+         data-caption="Mountain Reflections"
+         tabindex="0" role="button" aria-label="View Mountain Reflections"
+         style="animation-delay: 0.05s">
+      <img src="/assets/images/gallery/photo-1.jpg" alt="Mountain Reflections" loading="lazy">
+      <span class="caption-text">Mountain Reflections</span>
+    </div>
+
+    <div class="photo-card"
+         data-src="/assets/images/gallery/photo-2.jpg"
+         data-caption="Golden Hour"
+         tabindex="0" role="button" aria-label="View Golden Hour"
+         style="animation-delay: 0.1s">
+      <img src="/assets/images/gallery/photo-2.jpg" alt="Golden Hour" loading="lazy">
+      <span class="caption-text">Golden Hour</span>
+    </div>
+
+    <div class="photo-card"
+         data-src="/assets/images/gallery/photo-3.jpg"
+         data-caption="Still Waters"
+         tabindex="0" role="button" aria-label="View Still Waters"
+         style="animation-delay: 0.15s">
+      <img src="/assets/images/gallery/photo-3.jpg" alt="Still Waters" loading="lazy">
+      <span class="caption-text">Still Waters</span>
+    </div>
+
+    <div class="photo-card span-wide"
+         data-src="/assets/images/gallery/photo-4.jpg"
+         data-caption="Open Roads"
+         tabindex="0" role="button" aria-label="View Open Roads"
+         style="animation-delay: 0.2s">
+      <img src="/assets/images/gallery/photo-4.jpg" alt="Open Roads" loading="lazy">
+      <span class="caption-text">Open Roads</span>
+    </div>
+
+    <div class="photo-card"
+         data-src="/assets/images/gallery/photo-5.jpg"
+         data-caption="Forest Light"
+         tabindex="0" role="button" aria-label="View Forest Light"
+         style="animation-delay: 0.25s">
+      <img src="/assets/images/gallery/photo-5.jpg" alt="Forest Light" loading="lazy">
+      <span class="caption-text">Forest Light</span>
+    </div>
+
+    <div class="photo-card"
+         data-src="/assets/images/gallery/photo-6.jpg"
+         data-caption="Urban Geometry"
+         tabindex="0" role="button" aria-label="View Urban Geometry"
+         style="animation-delay: 0.3s">
+      <img src="/assets/images/gallery/photo-6.jpg" alt="Urban Geometry" loading="lazy">
+      <span class="caption-text">Urban Geometry</span>
+    </div>
+
+    <div class="photo-card"
+         data-src="/assets/images/gallery/photo-7.jpg"
+         data-caption="Morning Mist"
+         tabindex="0" role="button" aria-label="View Morning Mist"
+         style="animation-delay: 0.35s">
+      <img src="/assets/images/gallery/photo-7.jpg" alt="Morning Mist" loading="lazy">
+      <span class="caption-text">Morning Mist</span>
+    </div>
+
+    <div class="photo-card span-tall"
+         data-src="/assets/images/gallery/photo-8.jpg"
+         data-caption="Vertical Lines"
+         tabindex="0" role="button" aria-label="View Vertical Lines"
+         style="animation-delay: 0.4s">
+      <img src="/assets/images/gallery/photo-8.jpg" alt="Vertical Lines" loading="lazy">
+      <span class="caption-text">Vertical Lines</span>
+    </div>
+
+    <div class="photo-card"
+         data-src="/assets/images/gallery/photo-9.jpg"
+         data-caption="Last Light"
+         tabindex="0" role="button" aria-label="View Last Light"
+         style="animation-delay: 0.45s">
+      <img src="/assets/images/gallery/photo-9.jpg" alt="Last Light" loading="lazy">
+      <span class="caption-text">Last Light</span>
+    </div>
+
+  </div><!-- /photo-grid -->
+</main>
+
+<!-- ─── Lightbox ─────────────────────────────────── -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="lightbox-close" aria-label="Close lightbox">✕</button>
+  <button id="lightbox-prev" aria-label="Previous photo">&#8592;</button>
+
+  <div style="display:flex; flex-direction:column; align-items:center;">
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <button id="lightbox-next" aria-label="Next photo">&#8594;</button>
+  <div id="lightbox-counter"></div>
 </div>
-</div>
+
+<!-- ─── Lightbox Script ───────────────────────────── -->
+<script>
+  (() => {
+    const lightbox   = document.getElementById('lightbox');
+    const lbImg      = document.getElementById('lightbox-img');
+    const lbCaption  = document.getElementById('lightbox-caption');
+    const lbCounter  = document.getElementById('lightbox-counter');
+    const btnClose   = document.getElementById('lightbox-close');
+    const btnPrev    = document.getElementById('lightbox-prev');
+    const btnNext    = document.getElementById('lightbox-next');
+
+    const cards = Array.from(document.querySelectorAll('.photo-card'));
+    let current = 0;
+
+    function open(index) {
+      current = index;
+      const card = cards[current];
+      lbImg.src        = card.dataset.src || card.querySelector('img').src;
+      lbImg.alt        = card.dataset.caption || '';
+      lbCaption.textContent = card.dataset.caption || '';
+      lbCounter.textContent = `${current + 1} / ${cards.length}`;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      lbImg.focus();
+    }
+
+    function close() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function prev() {
+      current = (current - 1 + cards.length) % cards.length;
+      // brief flicker for transition feel
+      lbImg.style.opacity = '0';
+      lbImg.style.transform = 'scale(0.96) translateX(20px)';
+      setTimeout(() => {
+        open(current);
+        lbImg.style.opacity = '';
+        lbImg.style.transform = '';
+      }, 150);
+    }
+
+    function next() {
+      current = (current + 1) % cards.length;
+      lbImg.style.opacity = '0';
+      lbImg.style.transform = 'scale(0.96) translateX(-20px)';
+      setTimeout(() => {
+        open(current);
+        lbImg.style.opacity = '';
+        lbImg.style.transform = '';
+      }, 150);
+    }
+
+    // Click on card
+    cards.forEach((card, i) => {
+      card.addEventListener('click', () => open(i));
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); }
+      });
+    });
+
+    btnClose.addEventListener('click', close);
+    btnPrev.addEventListener('click', prev);
+    btnNext.addEventListener('click', next);
+
+    // Click outside image to close
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) close();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape')      close();
+      if (e.key === 'ArrowLeft')   prev();
+      if (e.key === 'ArrowRight')  next();
+    });
+
+    // Touch swipe
+    let touchStartX = 0;
+    lightbox.addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 50) dx < 0 ? next() : prev();
+    }, { passive: true });
+  })();
+</script>
+
