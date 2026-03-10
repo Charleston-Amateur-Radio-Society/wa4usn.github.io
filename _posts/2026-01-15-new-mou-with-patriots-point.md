@@ -10,4 +10,4 @@ After decades of CARS occupying Auxiliary Steering on the O2 deck, frame 1, Patr
 
 The move is being used an opportunity to update the MOU between the club and Patriots Point. A copy is attached for your reference so you can understand our relationship.
 
-[PP\_CARS\_MOU](https://www.wa4usn.org/CARS/wp-content/uploads/2026/01/PP_CARS_MOU.pdf)[Download](https://www.wa4usn.org/CARS/wp-content/uploads/2026/01/PP_CARS_MOU.pdf)
+<object data="{{ "/assets/images/PP_CARS_MOU.pdf" | relative_url }}" width="1000" height="1000" type='application/pdf'></object>
