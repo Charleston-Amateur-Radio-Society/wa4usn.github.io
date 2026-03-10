@@ -5,13 +5,13 @@ title: Events
 
 <section class="page-content">
   <div class="container">
-    <h1>Events</h1>
+  <h1>Events</h1>
 
     <p class="lead">Stay up to date with CARS events and activities.</p>
 
     <h2>Upcoming Events</h2>
-    <p>Check back regularly for updates on upcoming club events, or subscribe to our <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a> for the latest news.</p>
-
+  <iframe src="https://calendar.google.com/calendar/embed?src=cars.wa4usn%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    
     <h2>Regular Schedule</h2>
     <div class="events-list">
       <div class="event-item">
@@ -83,6 +83,7 @@ title: Events
     </div>
 
     <h2>Stay Connected</h2>
+
     <p>Subscribe to our <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a> or contact us at <a href="mailto:CARSinfo@wa4usn.org">CARSinfo@wa4usn.org</a> for event updates.</p>
   </div>
 </section>
